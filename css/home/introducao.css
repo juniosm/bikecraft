@@ -1,0 +1,34 @@
+.introducao-bg {
+  background-color: var(--cor-12);
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.introducao p {
+  color: var(--cor-0);
+  font: var(--font-2-l);
+  padding: 20px 0;
+}
+
+.title-intro {
+  color: var(--cor-0);
+  font: var(--font-1-xxl);
+  padding: 10px 0;
+}
+
+.title-intro span {
+  color: var(--cor-p1);
+}
+
+.fotografia {
+  border-radius: 5px;
+  max-height: 800px;
+}
