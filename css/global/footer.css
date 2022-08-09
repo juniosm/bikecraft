@@ -1,0 +1,47 @@
+#footer {
+  background-color: #000000;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  gap: 30px;
+  color: #ffffff;
+}
+
+.footer h4 {
+  font: 500 1.5rem "Roboto", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.footer-contato ul li {
+  font: 400 1.125rem "Roboto", sans-serif;
+  line-height: 2rem;
+  color: #b2b2b2;
+}
+
+.footer-info ul li {
+  font: 500 1.125rem "Roboto", sans-serif;
+  line-height: 2rem;
+  color: #b2b2b2;
+}
+
+.footer p {
+  color: #b2b2b2;
+}
+
+.line {
+  display: block;
+  height: 2px;
+  width: 360px;
+  background: #111111;
+  margin: 25px 0;
+}
+
+.header-icons {
+  display: flex;
+  gap: 32px;
+}
