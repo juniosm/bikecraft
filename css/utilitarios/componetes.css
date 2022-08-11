@@ -21,3 +21,13 @@
 .botao:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
+
+.title {
+  color: var(--cor-0);
+  font: var(--font-1-xxl);
+  padding: 10px 0;
+}
+
+.title span {
+  color: var(--cor-p1);
+}

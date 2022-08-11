@@ -1,0 +1,49 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--cor-p1);
+  align-items: end;
+  position: relative;
+}
+
+.descricao-dp {
+  padding-left: 60px;
+}
+
+.descricao-dp img {
+  position: absolute;
+  top: 40px;
+  left: 740px;
+}
+
+.text-depoimento p {
+  font: italic 900 2.5rem/1.3 "Merriweather", Times, serif;
+  position: relative;
+}
+
+.text-depoimento p::before {
+  content: "";
+  width: 40px;
+  height: 35px;
+  background: url(/img/dec/“-left.svg);
+  position: absolute;
+  top: -10px;
+  left: -40px;
+}
+
+.text-depoimento p::after {
+  content: "";
+  width: 40px;
+  height: 35px;
+  background: url(/img/dec/”-right.svg);
+  position: absolute;
+  top: 230px;
+  left: 555px;
+}
+
+.descricao-dp .autora {
+  font: var(--font-1-m-b);
+  color: var(--cor-p4);
+  margin-top: 32px;
+  margin-bottom: 80px;
+}

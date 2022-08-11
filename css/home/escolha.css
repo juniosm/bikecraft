@@ -1,0 +1,28 @@
+.escolha-bike {
+  padding: 120px 0;
+  max-width: 1300px;
+  margin: auto auto;
+}
+
+.escolha-bike .title {
+  color: var(--cor-11);
+  padding-bottom: 40px;
+  max-width: 1200px;
+  margin: auto auto;
+}
+
+.carrossel {
+  display: flex;
+  gap: 20px;
+  flex-wrap: no-wrap;
+}
+
+.carrossel h4 {
+  font: var(--font-1-xl);
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.carrossel p {
+  font: var(--font-2-m);
+}

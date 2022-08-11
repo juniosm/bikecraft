@@ -1,0 +1,89 @@
+.seguros-bg {
+  background: var(--cor-11);
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 60px 0;
+}
+
+.seguros-bg h2 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seguro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.seguro p {
+  color: var(--cor-0);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+}
+
+.card h4 {
+  font: var(--font-1-xl);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subtitle-prata {
+  color: var(--cor-6);
+}
+
+.subtitle-ouro {
+  color: var(--cor-p1);
+}
+
+.card li p {
+  font: var(--font-2-m);
+  padding: 10px 0;
+  position: relative;
+}
+
+.card li p::before {
+  content: "";
+  background-image: url(/img/icones/lista.svg);
+  width: 13px;
+  height: 9px;
+  position: absolute;
+  left: -25px;
+  top: 14px;
+}
+
+.card a {
+  margin-top: 22px;
+}
+
+.prata a {
+  background: var(--cor-10);
+  color: var(--cor-4);
+}
+
+.prata,
+.ouro {
+  background: var(--cor-12);
+  border-radius: 4px;
+  max-width: 560px;
+  padding: 32px;
+  padding-left: 52px;
+}
+
+.valor-sg {
+  font: var(--font-1-xl);
+  line-height: 0.5;
+  text-align: end;
+}
+
+.valor-sg span {
+  font: var(--font-1-xs);
+  color: var(--cor-6);
+}

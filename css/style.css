@@ -8,3 +8,9 @@
 @import "./global/footer.css";
 
 @import "./home/introducao.css";
+@import "./home/escolha.css";
+@import "./home/tecnologia.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
+
+@import "./more-than-one/seguro.css";
