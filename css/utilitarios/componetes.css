@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-.botao {
+.botao,
+.botao-seta {
   display: inline-block;
   padding: 1rem 2rem;
   text-align: center;
@@ -18,8 +19,25 @@
   font: var(--font-1-m-b);
 }
 
-.botao:hover {
+.botao-seta {
+  padding-right: 64px;
+  position: relative;
+}
+
+.botao:hover,
+.botao-seta:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+.botao-seta::after {
+  content: "";
+  width: 16px;
+  height: 8px;
+  background-image: url(/img/icones/seta.svg);
+  background-size: 100%;
+  position: absolute;
+  top: 20px;
+  right: 35px;
 }
 
 .title {
