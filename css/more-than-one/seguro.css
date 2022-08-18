@@ -5,7 +5,8 @@
   padding: 60px 0;
 }
 
-.seguros-bg h2 {
+.seguros-bg h2,
+.subtitle-seguro {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -86,4 +87,12 @@
 .valor-sg span {
   font: var(--font-1-xs);
   color: var(--cor-6);
+}
+
+/* Seguro pagina */
+
+.subtitle-seguro {
+  font: var(--font-2-l);
+  color: var(--cor-5);
+  text-transform: uppercase;
 }

@@ -17,12 +17,30 @@
   flex-wrap: no-wrap;
 }
 
-.carrossel h4 {
+.carrossel h4,
+.escolha-bike-interno h4 {
   font: var(--font-1-xl);
   margin-top: 16px;
   margin-bottom: 8px;
 }
 
-.carrossel p {
+.carrossel p,
+.escolha-bike-interno p {
   font: var(--font-2-m);
+}
+
+.escolha-bike-interno {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.escolha-bike-interno h2 {
+  grid-column: 1 /-1;
+  color: var(--cor-12);
+}
+
+.escolha-bike-interno{
+  margin-top: 90px;
+  margin-bottom: 120px;
 }

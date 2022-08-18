@@ -1,0 +1,42 @@
+.perguntas-frequentes {
+  padding: 110px 0 120px 0;
+}
+
+.perguntas-frequentes h2 {
+  color: var(--cor-12);
+  margin-bottom: 80px;
+}
+
+.lista-pergunta details {
+  max-width: 100%;
+  padding: 20px;
+  padding-left: 40px;
+}
+
+.lista-pergunta li:nth-child(odd) {
+  background: var(--cor-1);
+}
+
+.lista-pergunta details summary {
+  font: var(--font-1-m-b);
+  cursor: pointer;
+  position: relative;
+}
+
+.lista-pergunta details summary::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  position: absolute;
+  background: var(--cor-p1);
+  left: -20px;
+  top: 5px;
+}
+
+.lista-pergunta details p {
+  font: var(--font-2-m);
+  font-weight: 400;
+  color: var(--cor-9);
+  max-width: 830px;
+  margin-top: 16px;
+}

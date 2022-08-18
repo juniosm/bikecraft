@@ -28,4 +28,6 @@ img {
   display: block;
 }
 
-
+details summary {
+  list-style: none;
+}
