@@ -1,0 +1,77 @@
+.lojas-locais-bg {
+  background: var(--cor-1);
+}
+
+.lojas-locais {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 120px 0;
+}
+
+.lojas-locais h2 {
+  color: var(--cor-12);
+  grid-column: 1 / -1;
+}
+
+.regiao {
+  background: var(--cor-0);
+}
+
+.regiao h3 {
+  font: var(--font-1-xl);
+  padding-left: 60px;
+  margin-top: 32px;
+  position: relative;
+}
+
+.regiao h3::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  position: absolute;
+  background-color: var(--cor-p1);
+  top: 10px;
+  left: 35px;
+}
+
+.contato-regiao {
+  padding: 32px 74px;
+  display: flex;
+  gap: 74px;
+}
+
+.contato-regiao span {
+  font: 500 1rem/2 "Roboto", sans-serif;
+  color: var(--cor-8);
+  max-width: 140px;
+  position: relative;
+}
+
+.contato-regiao span::before {
+  content: "";
+  width: 2px;
+  height: 64px;
+  position: absolute;
+  background-color: var(--cor-2);
+  top: -1px;
+  left: -15px;
+}
+
+.horario {
+  font: var(--font-1-xs);
+  padding-left: 60px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.horario::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-image: url(/img/icones/horario.svg);
+  background-size: 100%;
+  top: -5px;
+  left: 35px;
+}

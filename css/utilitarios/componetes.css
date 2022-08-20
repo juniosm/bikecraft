@@ -49,3 +49,22 @@
 .title span {
   color: var(--cor-p1);
 }
+
+.title-area {
+  max-width: 100%;
+  box-sizing: border-box;
+  background: var(--cor-11);
+  padding: 60px 0;
+}
+
+.conteiner-title {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-area p {
+  font: var(--font-2-l-b);
+  text-transform: uppercase;
+  color: var(--cor-5);
+}

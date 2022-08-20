@@ -24,7 +24,8 @@
   color: var(--cor-5);
 }
 
-.footer-info ul li {
+.footer-info ul li,
+.footer-info a {
   font: 500 1.125rem "Roboto", sans-serif;
   line-height: 2rem;
   color: var(--cor-5);

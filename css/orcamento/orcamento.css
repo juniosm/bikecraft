@@ -1,0 +1,78 @@
+.orcamento-bg {
+  background: var(--cor-11);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.orcamento {
+  display: grid;
+  grid-template-columns: auto 2fr;
+}
+
+.orcamento-escolha,
+.orcamento-form {
+  padding: 60px 40px;
+}
+
+.orcamento-escolha {
+  background: var(--cor-12);
+  border-radius: 5px 0 0 5px;
+}
+
+.orcamento-escolha .elemento-radio {
+  padding: 1rem 2rem;
+  background: var(--cor-10);
+  border-radius: 5px;
+  color: var(--cor-4);
+  font: var(--font-1-m);
+}
+
+.bikecraft-or-seguro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.escolha-bikecraft .elemento-radio {
+  margin: 20px 0;
+}
+
+.elemento-radio input[type="radio"] {
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--cor-4);
+}
+
+.elemento-radio input[type="radio"]:checked {
+  border: 4px solid var(--cor-7);
+  
+}
+
+.orcamento-form {
+  background: var(--cor-0);
+  border-radius: 0 5px 5px 0;
+}
+
+.ckeckbox {
+  grid-column: 1 / -1;
+}
+
+.ckeckbox label {
+  display: inline-block;
+  margin: 0;
+}
+
+.ckeckbox input[type="checkbox"] {
+  background: var(--cor-1);
+  border: solid 1px var(--cor-3);
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+
+button {
+  border: 0;
+}

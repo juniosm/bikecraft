@@ -3,6 +3,7 @@
 @import "./utilitarios/componetes.css";
 @import "./utilitarios/cores.css";
 @import "./utilitarios/tipografias.css";
+@import "./utilitarios/form.css";
 
 @import "./global/header.css";
 @import "./global/footer.css";
@@ -20,3 +21,10 @@
 
 @import "./seguro/vantangens.css";
 @import "./seguro/perguntas.css";
+
+@import "./contato/contato.css";
+@import "./contato/lojas.css";
+
+@import "./orcamento/orcamento.css";
+
+@import "./termos/termos.css";

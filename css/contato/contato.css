@@ -1,0 +1,68 @@
+.contato-bg {
+  background: var(--cor-11);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.contato-info {
+  background-color: var(--cor-12);
+  padding: 60px 180px 130px 90px;
+}
+
+.contato-info h4 {
+  font: var(--font-1-m-b);
+  color: var(--cor-0);
+}
+
+.lista-contato-info {
+  margin: 60px 0;
+}
+
+.lista-contato-info p {
+  font: var(--font-2-s);
+  color: var(--cor-4);
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.lista-contato-info p::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  position: absolute;
+  left: -30px;
+}
+
+.lista-contato-info .endereco-contato::before {
+  background-image: url(/img/icones/local.svg);
+}
+
+.lista-contato-info .email-contato::before {
+  background-image: url(/img/icones/email.svg);
+}
+
+.lista-contato-info .telefone-contato::before {
+  background-image: url(/img/icones/telefone.svg);
+}
+
+.flex-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  gap: 32px;
+}
+
+.contato-form {
+  background: var(--cor-0);
+  padding: 60px;
+}
+
+.contato-form .botao {
+  border: 0;
+}
