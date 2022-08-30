@@ -1,27 +1,59 @@
 .escolha-bike {
-  padding: 120px 0;
-  max-width: 1300px;
-  margin: auto auto;
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
 
 .escolha-bike .title {
   color: var(--cor-11);
   padding-bottom: 40px;
-  max-width: 1200px;
-  margin: auto auto;
 }
 
 .carrossel {
   display: flex;
   gap: 20px;
-  flex-wrap: no-wrap;
+  padding: 0 20px 20px 20px;
+  flex-wrap: nowrap;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
 }
 
-.carrossel h4,
-.escolha-bike-interno h4 {
+#bicicleta-interno .carrossel {
+  padding: 0 0 20px 0;
+}
+
+.carrossel li {
+  min-width: 280px;
+}
+
+.carrossel img {
+  margin-bottom: 16px;
+}
+
+.carrossel h3,
+.escolha-bike-interno h3 {
   font: var(--font-1-xl);
-  margin-top: 16px;
   margin-bottom: 8px;
+}
+
+.carrossel h3 {
+  display: flex;
+  align-items: center;
+}
+
+.carrossel h3::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  margin-right: 8px;
+  background: var(--cor-p1);
+  transition: 0.2s;
+}
+
+.carrossel a:hover h3::before {
+  width: 24px;
 }
 
 .carrossel p,
@@ -29,18 +61,12 @@
   font: var(--font-2-m);
 }
 
-.escolha-bike-interno {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+.carrossel p {
+  margin-left: 20px;
 }
 
-.escolha-bike-interno h2 {
-  grid-column: 1 /-1;
-  color: var(--cor-12);
-}
-
-.escolha-bike-interno{
-  margin-top: 90px;
-  margin-bottom: 120px;
+@media (max-width: 800px) {
+  .escolha-bike {
+    padding-bottom: 60px;
+  }
 }

@@ -1,15 +1,10 @@
-.termos-bg {
-  background-color: var(--cor-0);
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
 .termos {
-  padding: 120px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.termos .termo {
-  margin-bottom: 50px;
+.termos p + h2 {
+  margin-top: 40px;
 }
 
 .termos h2 {
@@ -17,9 +12,9 @@
   margin-bottom: 20px;
 }
 
-.termos .termo p {
+.termos p {
   font: 400 1.125rem/1.5 "Roboto", sans-serif;
   color: var(--cor-10);
   max-width: 760px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }

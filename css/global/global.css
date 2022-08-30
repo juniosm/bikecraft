@@ -15,6 +15,7 @@ blockquote {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -27,6 +28,11 @@ img {
   max-width: 100%;
   display: block;
 }
+
+img[src$=".jpg"] {
+  border-radius: 4px;
+}
+
 
 details summary {
   list-style: none;

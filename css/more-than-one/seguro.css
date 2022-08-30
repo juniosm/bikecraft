@@ -1,15 +1,9 @@
 .seguros-bg {
   background: var(--cor-11);
-  max-width: 100%;
-  box-sizing: border-box;
-  padding: 60px 0;
 }
 
-.seguros-bg h2,
-.subtitle-seguro {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+.seguros-bg > h2 {
+  padding-top: 60px;
 }
 
 .seguro {
@@ -18,10 +12,24 @@
   gap: 40px;
   justify-content: center;
   align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#seguro .seguro {
+  padding-top: 0;
 }
 
 .seguro p {
   color: var(--cor-0);
+}
+
+.subtitle-prata {
+  color: var(--cor-6);
+}
+
+.subtitle-ouro {
+  color: var(--cor-p1);
 }
 
 .card {
@@ -33,35 +41,29 @@
 .card h4 {
   font: var(--font-1-xl);
   text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.card ul {
   margin-bottom: 20px;
-}
-
-.subtitle-prata {
-  color: var(--cor-6);
-}
-
-.subtitle-ouro {
-  color: var(--cor-p1);
 }
 
 .card li p {
   font: var(--font-2-m);
   padding: 10px 0;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .card li p::before {
   content: "";
   background-image: url(/img/icones/lista.svg);
+  display: block;
   width: 13px;
   height: 9px;
   position: absolute;
-  left: -25px;
-  top: 14px;
-}
-
-.card a {
-  margin-top: 22px;
+  left: -21px;
 }
 
 .prata a {
@@ -69,11 +71,14 @@
   color: var(--cor-4);
 }
 
+.prata a:hover {
+  background: var(--cor-9);
+}
+
 .prata,
 .ouro {
   background: var(--cor-12);
   border-radius: 4px;
-  max-width: 560px;
   padding: 32px;
   padding-left: 52px;
 }
@@ -95,4 +100,19 @@
   font: var(--font-2-l);
   color: var(--cor-5);
   text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .card li p {
+    font-size: 1rem;
+  }
+  .card a {
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .card a {
+    font-size: 0.9rem;
+  }
 }

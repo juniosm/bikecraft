@@ -1,68 +1,109 @@
 .contato-bg {
-  background: var(--cor-11);
-  max-width: 100%;
-  box-sizing: border-box;
+  background: linear-gradient(var(--cor-11) 300px, var(--cor-1) 0px);
 }
 
 .contato {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 5fr 7fr;
+}
+
+.contato-info,
+.contato-form {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .contato-info {
   background-color: var(--cor-12);
-  padding: 60px 180px 130px 90px;
+  border-radius: 5px 0 0 5px;
 }
 
-.contato-info h4 {
+.contato-info h2 {
   font: var(--font-1-m-b);
+  color: var(--cor-0);
+  margin-bottom: 60px;
+}
+
+.contato-endereco p,
+.contato-meios {
+  font: var(--font-2-s);
+  color: var(--cor-4);
+}
+
+.contato-endereco {
+  margin-bottom: 32px;
+  padding-left: 28px;
+  background: url(../../img/icones/local.svg) no-repeat 0px 2px;
+}
+
+.contato-endereco p {
+  margin-bottom: 4px;
+}
+
+.contato-meios a {
+  display: block;
+  max-width: max-content;
+  margin-bottom: 8px;
+  padding-left: 28px;
+}
+
+.contato-meios a:hover {
   color: var(--cor-0);
 }
 
-.lista-contato-info {
-  margin: 60px 0;
+.contato-meios a:first-child {
+  background: url(../../img/icones/email.svg) no-repeat 0px 2px;
 }
 
-.lista-contato-info p {
-  font: var(--font-2-s);
-  color: var(--cor-4);
+.contato-meios a:nth-child(2) {
   margin-bottom: 32px;
-  position: relative;
 }
 
-.lista-contato-info p::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-size: 100%;
-  position: absolute;
-  left: -30px;
+.contato-meios a:last-child {
+  background: url(../../img/icones/telefone.svg) no-repeat 0px 2px;
+  margin-bottom: 60px;
 }
 
-.lista-contato-info .endereco-contato::before {
-  background-image: url(/img/icones/local.svg);
-}
-
-.lista-contato-info .email-contato::before {
-  background-image: url(/img/icones/email.svg);
-}
-
-.lista-contato-info .telefone-contato::before {
-  background-image: url(/img/icones/telefone.svg);
+.contato-meios {
+  margin-bottom: 32px;
 }
 
 .flex-icon {
   display: flex;
   flex-wrap: wrap;
-  justify-items: center;
   gap: 32px;
+  padding-left: 28px;
 }
 
 .contato-form {
   background: var(--cor-0);
-  padding: 60px;
+  border-radius: 0 5px 5px 0;
 }
 
 .contato-form .botao {
-  border: 0;
+  grid-column: 1/ -1;
+}
+
+@media (max-width: 800px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-info,
+  .contato-form {
+    padding: 40px;
+  }
+
+  .contato-info {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .contato-form {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .contato-info h2,
+  .contato-meios a:last-child {
+    margin-bottom: 32px;
+  }
 }

@@ -1,6 +1,6 @@
 :root {
   --font-1-xxl: 600 4rem/1 "Poppins", sans-serif;
-  --font-1-xl: 600 2rem/1 "Poppins", sans-serif;
+  --font-1-xl: 600 2rem/1.25 "Poppins", sans-serif;
   --font-1-l: 400 1.5rem/1 "Poppins", sans-serif;
   --font-1-m: 400 1.125rem/1 "Poppins", sans-serif;
   --font-1-m-b: 600 1.125rem/1 "Poppins", sans-serif;
@@ -12,4 +12,20 @@
   --font-2-m: 500 1.125rem/1 "Roboto", sans-serif;
   --font-2-s: 400 1.125rem/1.25 "Roboto", sans-serif;
   --font-2-xs: 400 0.875rem/1.5 "Roboto", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --font-1-xxl: 600 3rem/1.25 "Poppins", sans-serif;
+
+    --font-2-l: 400 1.125rem/1.5 "Roboto", sans-serif;
+    --font-2-l-b: 500 1.125rem/1.125 "Roboto", sans-serif;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --font-1-xxl: 600 2rem/1.25 "Poppins", sans-serif;
+    --font-1-xl: 600 1.5rem/1.125 "Poppins", sans-serif;
+  }
 }

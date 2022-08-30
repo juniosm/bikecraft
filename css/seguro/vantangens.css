@@ -1,15 +1,14 @@
 .nossas-vantagens-bg {
   background: var(--cor-12);
-  max-width: 100%;
-  box-sizing: border-box;
-  padding: 120px 0;
 }
 
 .nossas-vantagens {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px 80px;
   color: var(--cor-0);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .nossas-vantagens h2 {
@@ -17,12 +16,34 @@
   margin-bottom: 80px;
 }
 
+.nossas-vantagens img {
+  margin-bottom: 8px;
+}
+
 .nossas-vantagens h4 {
   font: var(--font-1-m-b);
-  padding: 8px 0;
+  margin-bottom: 8px;
 }
 
 .nossas-vantagens p {
   font: var(--font-2-m);
   font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .nossas-vantagens {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 20px 40px;
+  }
+
+  .nossas-vantagens h2 {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nossas-vantagens {
+    gap: 40px;
+  }
 }
