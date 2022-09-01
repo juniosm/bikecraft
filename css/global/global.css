@@ -27,12 +27,12 @@ ul {
 img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 img[src$=".jpg"] {
   border-radius: 4px;
 }
-
 
 details summary {
   list-style: none;

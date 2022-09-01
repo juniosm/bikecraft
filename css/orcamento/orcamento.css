@@ -1,78 +1,188 @@
-.orcamento-bg {
-  background: var(--cor-11);
-  max-width: 100%;
-  box-sizing: border-box;
+#orcamento {
+  background: linear-gradient(var(--cor-11) 500px, var(--cor-1) 0px);
 }
 
 .orcamento {
   display: grid;
-  grid-template-columns: auto 2fr;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 120px;
+}
+
+.orcamento h2 {
+  font: var(--font-1-xs);
+  color: var(--cor-5);
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.orcamento-conteudo h2,
+.orcamento-form h2:nth-child(n + 2) {
+  margin-top: 20px;
+}
+
+.orcamento h2::before {
+  content: "";
+  width: 4px;
+  height: 8px;
+  display: inline-block;
+  background: var(--cor-p1);
+  position: absolute;
+  left: -12px;
 }
 
 .orcamento-escolha,
 .orcamento-form {
-  padding: 60px 40px;
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .orcamento-escolha {
-  background: var(--cor-12);
   border-radius: 5px 0 0 5px;
-}
-
-.orcamento-escolha .elemento-radio {
-  padding: 1rem 2rem;
-  background: var(--cor-10);
-  border-radius: 5px;
-  color: var(--cor-4);
-  font: var(--font-1-m);
-}
-
-.bikecraft-or-seguro {
+  background: var(--cor-12);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  margin-bottom: 40px;
+  align-content: start;
 }
 
-.escolha-bikecraft .elemento-radio {
-  margin: 20px 0;
-}
-
-.elemento-radio input[type="radio"] {
-  appearance: none;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  border: 2px solid var(--cor-4);
-}
-
-.elemento-radio input[type="radio"]:checked {
-  border: 4px solid var(--cor-7);
-  
-}
-
-.orcamento-form {
-  background: var(--cor-0);
-  border-radius: 0 5px 5px 0;
-}
-
-.ckeckbox {
+.orcamento-escolha > * {
   grid-column: 1 / -1;
 }
 
-.ckeckbox label {
+.orcamento-escolha > label {
+  grid-column: initial;
+}
+
+.orcamento-escolha label {
+  font: var(--font-1-m);
+  color: var(--cor-4);
+  background: var(--cor-10);
+  padding: 12px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  border: 1px solid var(--cor-10);
+}
+
+.orcamento-escolha input:checked + label {
+  background: var(--cor-0);
+  color: var(--cor-11);
+}
+
+.orcamento-escolha label::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--cor-6);
+  border-radius: 50%;
+  margin-right: 8px;
   display: inline-block;
-  margin: 0;
 }
 
-.ckeckbox input[type="checkbox"] {
-  background: var(--cor-1);
-  border: solid 1px var(--cor-3);
-  width: 32px;
-  height: 32px;
-  vertical-align: middle;
+.orcamento-escolha input:checked + label::before {
+  border-color: var(--cor-7);
+  box-shadow: inset 0 0 0 2px var(--cor-0), inset 0 0 0 5px var(--cor-7);
 }
 
-button {
-  border: 0;
+.orcamento-escolha label:hover {
+  background: var(--cor-9);
+  border-color: var(--cor-9);
+}
+
+.orcamento-escolha input:focus + label {
+  border: solid 1px var(--cor-12);
+  box-shadow: 0 0 0 2px var(--cor-p1);
+}
+
+.orcamento-escolha label span {
+  display: none;
+}
+
+.orcamento-escolha input:checked + label span {
+  display: inline-block;
+}
+
+.orcamento-escolha input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.orcamento-conteudo {
+  display: none;
+}
+
+#bikeradio:checked ~ #orcamento-bikecraft,
+#seguroradio:checked ~ #orcamento-seguro {
+  display: grid;
+  gap: 20px;
+}
+
+.orcamento-detalhes {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  background: var(--cor-0);
+  padding: 20px;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.orcamento-detalhes li {
+  font: var(--font-1-xs);
+  color: var(--cor-8);
+  display: flex;
+  align-items: center;
+  margin-bottom: 8;
+}
+
+.orcamento-detalhes li img {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.orcamento-escolha input:checked + label + .orcamento-detalhes {
+  display: grid;
+}
+
+/* form */
+
+.orcamento-form {
+  border-radius: 0 5px 5px 0;
+  background: var(--cor-0);
+}
+
+.orcamento-form h2 {
+  color: var(--cor-9);
+}
+
+@media (max-width: 1200px) {
+  .orcamento-escolha,
+  .orcamento-form {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .orcamento {
+    grid-template-columns: 1fr;
+  }
+
+  .orcamento-escolha {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .orcamento-form {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .orcamento-escolha {
+    grid-template-columns: 1fr;
+  }
 }
