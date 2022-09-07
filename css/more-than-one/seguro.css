@@ -58,7 +58,7 @@
 
 .card li p::before {
   content: "";
-  background-image: url(/img/icones/lista.svg);
+  background-image: url(../../img/icones/lista.svg);
   display: block;
   width: 13px;
   height: 9px;

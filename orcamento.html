@@ -6,9 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bikecraft</title>
-  <link href="./css/style.css" rel="preload" as="style">
-  <link rel="stylesheet" href="./css/style.css">
+  <link href="./css/style.min.css" rel="preload" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.svg" type="image/x-icon">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body id="orcamento">
@@ -40,10 +41,10 @@
       <div class="orcamento-escolha">
         <h2>Bikecraft ou Seguro?</h2>
 
-        <input type="radio" name="tipo" value="bikeradio " id="bikeradio">
+        <input type="radio" name="tipo" value="bikeradio" id="bikeradio">
         <label for="bikeradio">Bikcraft</label>
 
-        <input type="radio" name="tipo" value="seguroradio " id="seguroradio">
+        <input type="radio" name="tipo" value="seguroradio" id="seguroradio">
         <label for="seguroradio">Seguro</label>
 
         <div class="orcamento-conteudo" id="orcamento-bikecraft">
@@ -90,10 +91,10 @@
         <div class="orcamento-conteudo" id="orcamento-seguro">
           <h2>Escolha o plano</h2>
 
-          <input type="radio" name="produto" value="prata " id="prata">
+          <input type="radio" name="produto" value="prata" id="prata">
           <label for="prata">Prata<span>R$199</span></label>
 
-          <input type="radio" name="produto" value="ouro " id="ouro">
+          <input type="radio" name="produto" value="ouro" id="ouro">
           <label for="ouro">Ouro<span>R$299</span></label>
         </div>
 
@@ -195,6 +196,7 @@
   </footer>
 
 
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

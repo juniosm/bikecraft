@@ -41,7 +41,7 @@
   transition: 0.3s;
 }
 
-.lista-pergunta details summary:hover::after {
+.lista-pergunta details summary[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
 

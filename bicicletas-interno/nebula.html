@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bikecraft</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link href="../css/style.min.css" rel="preload" as="style">
+  <link rel="stylesheet" href="../css/style.min.css">
   <link rel="icon" href="../favicon.svg" type="image/x-icon">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body id="bicicleta-interno">
@@ -45,7 +47,7 @@
         <div class="descricao-produto">
           <p class="texto-descricao-produto">Nebula Cosmic é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
           <div class="produto-comprar">
-            <a class="botao" href="/orcamento.html">Comprar agora</a>
+            <a class="botao" href="../orcamento.html?tipo=bikeradio&produto=nebula">Comprar agora</a>
             <span class="entrega"> <img src="../img/icones/entrega.svg" alt=""> entrega em 5 dias</span>
             <span class="estoque"> <img src="../img/icones/estoque.svg" alt="">18 em estoque</span>
           </div>
@@ -140,7 +142,7 @@
 
   <footer class="footer-bg">
     <div class="footer conteiner">
-      <img src="./img/bikcraft.svg" alt="Logo Bikecraft">
+      <img src="../img/bikcraft.svg" alt="Logo Bikecraft">
       <div class="footer-contato">
         <h4>Contato</h4>
         <ul>
@@ -151,13 +153,13 @@
         </ul>
         <div class="header-icons">
           <a href="https://www.instagram.com/">
-            <img src="./img/redes/instagram.svg" alt="logo instagram">
+            <img src="../img/redes/instagram.svg" alt="logo instagram">
           </a>
           <a href="https://www.facebook.com/">
-            <img src="./img/redes/facebook.svg" alt="logo facebook">
+            <img src="../img/redes/facebook.svg" alt="logo facebook">
           </a>
           <a href="https://www.youtube.com/">
-            <img src="./img/redes/youtube.svg" alt="logo youtube">
+            <img src="../img/redes/youtube.svg" alt="logo youtube">
           </a>
         </div>
 
@@ -176,6 +178,7 @@
   </footer>
 
 
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

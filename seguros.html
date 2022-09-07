@@ -6,9 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bikecraft</title>
-  <link href="./css/style.css" rel="preload" as="style">
-  <link rel="stylesheet" href="./css/style.css">
+
+  <link href="./css/style.min.css" rel="preload" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.svg" type="image/x-icon">
+
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body id="seguro">
@@ -36,9 +39,9 @@
         </div>
       </div>
       <div class="seguro conteiner">
-        <div class="prata card">
+        <div class="prata card " data-anime="200">
           <div>
-            <h4 class="subtitle-prata">prata</h4>
+            <h3 class="subtitle-prata fadeInLeft">prata</h3>
             <ul>
               <li>
                 <p>Duas trocas por ano</p>
@@ -53,14 +56,14 @@
                 <p>Cobertura estadual</p>
               </li>
             </ul>
-            <a class="botao" href="/orcamento.html">Inscreva-se</a>
+            <a class="botao" href="/orcamento.html?tipo=seguroradio&produto=prata">Inscreva-se</a>
           </div>
           <p class="valor-sg">R$ 199<br><span>mensal</span></p>
         </div>
 
-        <div class="ouro card">
+        <div class="ouro card fadeInRight " data-anime="400">
           <div>
-            <h4 class="subtitle-ouro">ouro</h4>
+            <h3 class="subtitle-ouro">ouro</h3>
             <ul>
               <li>
                 <p>Cinco trocas por ano</p>
@@ -81,7 +84,7 @@
                 <p>Acesso ao Clube Bikcraft</p>
               </li>
             </ul>
-            <a class="botao" href="/orcamento.html">Inscreva-se</a>
+            <a class="botao" href="/orcamento.html?tipo=seguroradio&produto=ouro">Inscreva-se</a>
           </div>
           <p class="valor-sg">R$ 299<br><span>mensal</span></p>
         </div>
@@ -128,49 +131,49 @@
       <ul class="lista-pergunta">
         <li>
           <details>
-            <summary>Qual forma de pagamento vocês aceitam?</summary>
+            <summary aria-expanded="false">Qual forma de pagamento vocês aceitam?</summary>
             <p>Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
           </details>
         </li>
 
         <li>
           <details>
-            <summary>Como posso entrar em contato?</summary>
+            <summary aria-expanded="false">Como posso entrar em contato?</summary>
             <p>Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
           </details>
         </li>
 
         <li>
           <details>
-            <summary>Vocês possuem algum desconto?</summary>
+            <summary aria-expanded="false">Vocês possuem algum desconto?</summary>
             <p>Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
           </details>
         </li>
 
         <li>
           <details>
-            <summary>Qual a garantia que possuo?</summary>
+            <summary aria-expanded="false">Qual a garantia que possuo?</summary>
             <p>Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
           </details>
         </li>
 
         <li>
           <details>
-            <summary>Posso parcelar no boleto?</summary>
+            <summary aria-expanded="false">Posso parcelar no boleto?</summary>
             <p>Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
           </details>
         </li>
 
         <li>
           <details>
-            <summary>Quantas trocas posso fazer ao ano?</summary>
+            <summary aria-expanded="false">Quantas trocas posso fazer ao ano?</summary>
             <p>Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
           </details>
         </li>
 
         <li>
           <details>
-            <summary>Qual Bikcraft devo escolher para o meu tamanho?</summary>
+            <summary aria-expanded="false">Qual Bikcraft devo escolher para o meu tamanho?</summary>
             <p>Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
           </details>
         </li>
@@ -216,6 +219,8 @@
     </div>
   </footer>
 
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
